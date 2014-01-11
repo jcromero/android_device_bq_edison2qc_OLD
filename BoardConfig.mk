@@ -18,9 +18,9 @@
 
 -include device/bq/rockchip-common/BoardConfigCommon.mk
 
-TARGET_BOOTLOADER_BOARD_NAME := bq_edison2qc
+TARGET_BOOTLOADER_BOARD_NAME := bq_Edison2QuadCore
 
-TARGET_OTA_ASSERT_DEVICE := edison2qc,bq_edison2qc
+TARGET_OTA_ASSERT_DEVICE := edison2qc,bq_Edison2QuadCore
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/bq/edison2qc/bluetooth
@@ -33,7 +33,8 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 14906032128
 BOARD_FLASH_BLOCK_SIZE := 16384
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/bq/edison2qc
-TARGET_KERNEL_CONFIG := cyanogenmod_edison2qc_defconfig
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
+TARGET_PREBUILT_KERNEL := device/bq/edison2qc/kernel
+#TARGET_KERNEL_SOURCE := kernel/bq/edison2qc
+#TARGET_KERNEL_CONFIG := cyanogenmod_edison2qc_defconfig
+#TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3
 BOARD_USES_UNCOMPRESSED_BOOT := true
